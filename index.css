@@ -1,0 +1,90 @@
+body{
+    background-image: url(images/bg2.jpg);
+    height: 100vh;
+    background-position: center center;
+    background-size: cover; 
+    background-repeat: no-repeat;
+
+    margin: 0;
+    padding: 0;
+}
+.content-wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    z-index:0;
+
+}
+.project-container{
+    width:60vh;
+    height:30vh;
+    border-radius: 1rem;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    
+}
+
+.close-btn{
+    margin-left: auto;
+    color:red;
+    font-size: 1.5rem;
+    transition:1s ease-in-out
+}
+.close-btn:hover{
+    transform: rotate(360deg);
+    color:maroon;
+}
+section{
+    position: fixed;
+    top: 100%;
+    opacity:0; 
+    width:100%;
+    height:100vh;
+    background-color: rgba(0, 56, 240, 0.3);
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    z-index:1;
+    transition:all 1s;
+}
+.view-content{
+    width:60vh;
+    height:30vh;
+    border-radius: 1rem;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding:1rem;
+    
+}
+
+button{
+    background-color: tomato;
+    border-radius: .5rem;
+    padding:.5rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    text-transform: capitalize;
+    transition:0.5s ease-in-out
+}
+h3{
+    color:tomato;
+    font-size: 200%;
+}
+button:hover{
+    background-image: linear-gradient(0deg, rgba(240,63,0,1) 12%, rgba(255,63,12,1) 46%, rgba(241,146,126,1) 91%);
+}
+.animate-view-content{
+    top:0;
+    opacity:1;
+}
